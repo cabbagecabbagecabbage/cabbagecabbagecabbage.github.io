@@ -1,14 +1,14 @@
 ---
 title: "Problem Analysis 0: Introduction to the Series"
 date: 2021-11-12 12:00:00 +0000
-categories: [Academic]                          # up to 2
-tags: [competitive-programming, problem-analysis-series]                                # all lowercase
+categories: [Academic]
+tags: [competitive-programming, problem-analysis-series]
 math: true
 ---
 
 # Preface
 
-This series of six blog posts was originally a submission to the EWC4U course. Big shout-out to Ms. D for allowing me to write about such a technical topic for this unit!
+This series of six blog posts was originally a submission to the EWC4U course. Shout-out to Ms. D for allowing me to write about such a technical topic for this unit!
 
 I'll make a few edits here and there, but I'll mostly just be migrating the six posts over as-is. I might continue this series one day if I stumble upon a particularly elegant problem.
 
