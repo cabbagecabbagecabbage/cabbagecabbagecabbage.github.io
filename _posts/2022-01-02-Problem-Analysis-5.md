@@ -222,7 +222,7 @@ ___
 
 This problem presents several useful concepts:
 1. Breaking down a path through an edge and taking advantage of the optimal substructure of shortest paths
-2. Dijkstra's algorithm to solve the single-source shortest path, and reversing the edges to solve the single-destination shortest path problem
+2. Dijkstra's algorithm to solve the single-source shortest path problem, and symmetrically solving the single-destination shortest path problem by reversing the edges
 3. Combining sorting, preprocessing (prefix sum arrays), and binary search to answer each query in logarithmic time
 
 It should be noted that it is also possible to use the two-pointers method to do the final step instead of binary search + prefix sum arrays.

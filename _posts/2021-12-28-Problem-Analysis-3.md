@@ -42,7 +42,7 @@ From this we conclude that the sum of the lengths of any two sides of a triangle
 
 The problem now becomes "find the number of triples $(x,y,z)$ satisfying the constraints such that $x + y > z$. The method we will use to solve this problem is to repeatedly optimize a naïve solution until we obtain a valid solution.
 
-Let's first consider the obvious brute force solution: iterate through all possible values of $x$, $y$ and $z$ and add 1 to our answer whenever $x + y > z$.
+Let's first consider the obvious brute force solution: iterate through all possible values of $x$, $y$ and $z$ and add $1$ to our answer whenever $x + y > z$.
 
 ### Pseudocode 1
 
@@ -55,13 +55,13 @@ for each x value in [A,B]:
 print the answer
 ```
 
-Although this solution would give the correct answer, it is too slow. Notice that $A$, $B$, $C$ and $D$ can go up to $5 \times 10^5$, so it is possible for each of the intervals to have length $10^5$. Since we have 3 nested loops, we could be performing $(10^5)^3=10^{15}$ operations, which is way too many (see Time Complexity · USACO Guide or cpp.pdf (darrenyao.com); most importantly, C++ can handle about $10^8$ operations per second). We need to optimize this solution so that it can fit into the time limit.
+Although this solution would give the correct answer, it is too slow. Notice that $A$, $B$, $C$ and $D$ can go up to $5 \times 10^5$, so it is possible for each of the intervals to have length $10^5$. Since we have 3 nested loops, we could be performing $(10^5)^3=10^{15}$ operations, which is way too many (see [Time Complexity · USACO Guide](https://usaco.guide/bronze/time-comp?lang=cpp); most importantly, C++ can handle about $10^8$ operations per second). We need to optimize this solution so that it can fit into the time limit.
 
 Let's start by fixing a value of $z$. For this value of $z$, how many triples of $(x,y,z)$ satisfy $x + y > z$? Since $z$ is fixed, the answer depends entirely on $x$ and $y$. The question then becomes, "how many pairs $(x,y)$ satisfy $x + y > z$?"
 
 To answer this question efficiently, instead of looping through every single pair for every fixed value of $z$, we use the idea of precomputation. If we precompute an array defined as $arr[i]$ stores the number of pairs $(x,y)$ that satisfies $x + y = i$, we can loop through $arr[z+1]$ to $arr[B+C]$ instead. Notice that $z$ is at least $C$, so the interval is at worst $[C+1,B+C]$ which has length $B$.
 
-To precompute this array, we can loop through all pairs of $x$ and $y$ and add 1 to $arr[x+y]$ for every pair. The reason this optimizes our solution is that we are doing this exactly once before we loop through the fixed values of $z$, instead of doing it every time.
+To precompute this array, we can loop through all pairs of $x$ and $y$ and add $1$ to $arr[x+y]$ for every pair. The reason this optimizes our solution is that we are doing this exactly once before we loop through the fixed values of $z$, instead of doing it every time.
 
 ### Pseudocode 2
 
@@ -75,13 +75,13 @@ for each z in [C,D]:
 print the answer
 ```
 
-Again, let's approximate the number of operations we perform in our solution. In the first nested for-loop, we could perform $10^5 \times 10^5 = 10^{10}$ operations. In the second nested for-loop, we could perform $10^5 \times 10^5 = 10^{10}$ operations as well. In total, we could perform around $2 \times 10^{10}$ operations, which is much better than before but still impermissible (greater than $10^8$).
+Again, let's approximate the number of operations we perform in our solution. In the first nested for-loop, we could perform $10^5 \times 10^5 = 10^{10}$ operations. In the second nested for-loop, we could perform $10^5 \times 10^5 = 10^{10}$ operations as well. In total, we could perform a factor of $10^{10}$ operations, which is much better than before but still impermissible (greater than $10^8$).
 
 Now that our solution is split into two parts: precomputation and using the array to compute the answer by fixing values of $z$. Let's optimize them separately with data structures. These data structures are better explained by the linked articles, so I encourage you to go read up on them first if you are unfamiliar with them.
 
 The optimization of the second part is easier to see: we are repeatedly performing static range sum queries on $arr$ for every fixed value of $z$, so we can precompute a Prefix Sum Array to handle these queries in constant time.
 
-The optimization of the first part uses a very similar data structure. This time, notice that we are repeatedly performing range updates (more specifically, increments) for every fixed $x$ from $arr[x+B]$ to $arr[x+C]$. This can be optimized with the usage of a Difference Array by adding 1 to $arr[x+B]$ and subtracting 1 from $arr[x+C+1]$ for every $x$, then performing a linear scan (identical to precomputing the Prefix Sum Array) afterwards.
+The optimization of the first part uses a very similar data structure. This time, notice that we are repeatedly performing range updates (more specifically, increments) for every fixed $x$ from $arr[x+B]$ to $arr[x+C]$. This can be optimized with the usage of a Difference Array by adding $1$ to $arr[x+B]$ and subtracting $1$ from $arr[x+C+1]$ for every $x$, then performing a linear scan (identical to precomputing the Prefix Sum Array) afterwards.
 
 ### Pseudocode 3
 
@@ -99,8 +99,8 @@ print the answer
 ```
 
 Finally, let's calculate the number of operations again.
-The first for-loop could perform $10^5$ operations
-The second and third for-loops (they are identical) could each perform $2 \times 10^5$ operations
+The first for-loop could perform a factor of $10^5$ operations
+The second and third for-loops (they are identical) could each perform a factor of $10^5$ operations
 The fourth for-loop could perform $10^5$ operations
 
 In total, we will not perform more than $10^6$ operations, which fits comfortably within the limit of $10^8$ operations per second. This completes the solution.

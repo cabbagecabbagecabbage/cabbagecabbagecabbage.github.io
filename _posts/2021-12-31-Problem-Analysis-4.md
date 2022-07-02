@@ -69,18 +69,15 @@ Piecing together Parts 1 and 2, we have the following solution:
 
 ### Pseudocode
 
-
-1. If $n > m$, the answer is "YES" and we are done.
-
-2. Otherwise,
-    1. Initialize our base case to $DP[0][0] = true$ since 0 elements will have a sum of $0$ modulo $m$.
-    2. For every $a_i$ in the sequence
-        For every $j$ value from $0$ to $m$
-            $DP[i][j] = DP[i-1][j]$ || $DP[i-1][(j-a[i]+m)\%m]$
-    3. Output "YES" if $DP[n][m]$ is true, otherwise output "NO".
-
-
-Code blocks were not used here because I want the math notation to render.
+```
+If n > m, the answer is "YES" and we are done.
+Otherwise,
+    Initialize our base case to DP[0][0] = true since 0 elements will have a sum of 0 modulo m.
+    For every a_i in the sequence
+        For every j value from 0 to m
+            DP[i][j] = DP[i-1][j] || DP[i-1][(j-a[i]+m)\%m]
+    Output "YES" if DP[n][m] is true, otherwise output "NO".
+```
 
 
 ### Sample Implementation in C++

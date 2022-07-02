@@ -42,6 +42,7 @@ Let us extract the key information from the problem:
 -  The sea level rises one foot every second, starting at height $0$.
 - A store is defined by the time it takes to visit and its height.
 - If we visit a store, we must be able to return before it is submerged (i.e., the sea level rises above its height).
+
 We are given $n$ of these stores, and we must choose the largest possible subset of these stores to visit satisfying the condition above.
 ​
 With a clear grasp of the problem, we can begin to make a few observations.
@@ -127,8 +128,9 @@ Piecing together the observations from Parts 1 and 2, we have the following algo
 Sort the stores in non-decreasing order.
 Iterate through the stores in order
 For each store:
-    Include the store in our subsequence, and increment our answer.
-    If the total time exceeds the height of the current store, exclude the store in our subsequence that takes the longest to visit, and decrement our answer.
+    Include the store in our subsequence and increment answer.
+    If the total time exceeds the height of the current store
+	Exclude the store in our subsequence that takes the longest to visit and decrement answer
 ```
 
 ### Choosing a Data Structure
@@ -175,5 +177,5 @@ ___
 
 - The official solution slides can be found here: [NCNA17slides.pdf (uwaterloo.ca)](https://cs.uwaterloo.ca/~bcsandlu/NCNA17slides.pdf). This analysis was inspired by the solution shown on slide 23.
 - The process of proving that sorting the stores in order of non-decreasing height is optimal (see Part 1)  is very similar to the proofs in exchange argument dynamic programming problems. see [Lecture #3 — Exchange arguments (sorting with dp) - Codeforces](https://codeforces.com/blog/entry/63533).
-- Most other greedy algorithms choose the locally optimal choice at each step of the algorithm, but this greedy algorithm is creative because it chooses all the stores to visit at first, then removes the worst ones, making it much easier to prove correct and implement.
+- Most other greedy algorithms choose the locally optimal choice at each step of the algorithm, but this greedy algorithm is creative because it chooses all the stores to visit at first, then removes the worst ones, making it much easier to prove correct and implement. I find this solution very clever.
 - Like the first problem presented in the series, I discovered this problem through the "CCC Training Camp" problem set curated by <a href="https://dmoj.ca/user/xiaowuc1" target="_blank">Nick Wu</a>. The full list of problems can be found <a href="https://amolina.ca/bojlist/camp-vert" target="_blank">here</a>.
