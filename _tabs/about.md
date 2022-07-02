@@ -6,7 +6,7 @@ order: 4
 
 Hello there, welcome to my blog!
 
-I'm Rayton, a 17-year-old high school student from Canada. You can read more about me on <a href="https://dulcet-pastelito-8ae32b.netlify.app/" target="_blank">my main website</a>.
+I'm Rayton, a 17-year-old high school student from Canada. You can read more about me on <a href="https://www.raytonchen.com" target="_blank">my main website</a>.
 
 
 ## Why I'm Starting a Blog
