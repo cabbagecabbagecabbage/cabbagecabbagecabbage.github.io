@@ -1,19 +1,19 @@
 ---
-title: "Problem Analysis 0: Introduction to the Series"
+title: "Introduction to the Problem Analysis Series"
 date: 2021-11-12 12:00:00 +0000
 categories: [Academic]
 tags: [competitive-programming, problem-analysis-series]
 math: true
 ---
 
-# Preface
+# Note 
 
 This series of six blog posts was originally a submission to the EWC4U course. Shout-out to Ms. D for allowing me to write about such a technical topic for this unit!
 
 I'll make a few edits here and there, but I'll mostly just be migrating the six posts over as-is. I might continue this series one day if I stumble upon a particularly elegant problem.
 
 
-# Introduction to the Problem Analysis Series
+# Introduction
 
 Hello there. I'm a high school student who enjoys mathematical and algorithmic problem-solving. At the time of writing, I have about a year of experience in competitive programming, a mind-sport where contestants solve programming tasks as quickly as possible under certain constraints. 
 
