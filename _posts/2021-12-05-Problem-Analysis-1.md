@@ -85,9 +85,9 @@ print the answer
 #include <bits/stdc++.h>
 using namespace std;
 
-const int nax = 1e3 + 5;
+const int maxn = 1e3 + 5;
 int m,n;
-pair<int,int> lines[nax*2];
+pair<int,int> lines[maxn*2];
 
 int main() {
 	cin >> n >> m;
