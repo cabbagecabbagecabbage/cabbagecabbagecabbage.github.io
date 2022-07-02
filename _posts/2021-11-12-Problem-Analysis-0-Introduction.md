@@ -21,7 +21,7 @@ Among all of the programming problems I solved last year, I found several to be 
 
 I often get stuck on problems and read the problem editorials. An issue with many problem editorials is the lack of detail and explanation for the motivation needed to formulate the correct solution. I aim to provide a comprehensive exposition of the solutions to these problems by avoiding leaps in logic, presenting proofs for non-trivial claims, providing links to external resources, and navigating through multi-step solutions in an intuitive manner.
 
-This is not to say that no prerequisite experience in algorithmic problem solving is required to understand the analyses. Instead, I aim to educate/entertain readers who are capable of making a decent attempt at the problems themselves and are willing to put in some effort to understand the problems and their solutions.
+This is not to say that no prerequisite experience in algorithmic problem solving is required to understand the analyses. Instead, I aim to educate/interest readers who are capable of making a decent attempt at the problems themselves and are willing to put in some effort to understand the problems and their solutions.
 
 I encourage readers to attempt the problems before reading the analyses. If the titles seem somewhat dull, that's because I don't want to spoil anything about the solution beforehand.
 
