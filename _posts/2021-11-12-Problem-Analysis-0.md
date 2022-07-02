@@ -6,7 +6,7 @@ tags: [competitive-programming, problem-analysis-series]
 math: true
 ---
 
-# Note 
+# Note From the Future
 
 This series of six blog posts was originally a submission to the EWC4U course. Shout-out to Ms. D for allowing me to write about such a technical topic for this unit!
 
