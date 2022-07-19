@@ -47,7 +47,7 @@ I scored 55/75 points in the end, which put me first on the scoreboard of the cl
 
 ## ECOO 2021
 
-Three months later, the ECOO Programming Contest took place. ECOO was traditionally a team contest where you collaborate with a few other programmers to solve problems, but since COVID forced everything to become online, it was instead an individual contest in 2021.
+Three months later, the ECOO Programming Contest took place. ECOO was traditionally a team contest where you collaborate with a few other programmers to solve problems. However, COVID forced everything (in 2021) to be online, so it was held as an individual contest instead.
 
 Placing 12th in the province is undoubtedly my most perplexing achievement, considering that I can easily name 20 Toronto kids (or, at least, their DMOJ handles) who would destroy me in their sleep under normal circumstances. I must suspect that there were some technical difficulties with the judge that impeded others' progress. 
 
@@ -82,7 +82,7 @@ With these petty excuses out of the way, CCC 2022 was an absolute nightmare for 
 - I worked on S3 by drawing out sample cases on paper. I made several useful observations, such as the construction for the maximum value and how the construction can be manipulated to reduce the value to the desired value. I had a rough idea of what the solution would look like around the 1h30 mark.
 - I became extremely confused by edge cases and implementation bugs (something about subtracting iterators not giving me the proper index, but I can't remember exactly what the bug was). My code (and my mental state) quickly became an absolute mess.
 - Panic was through the roof by the 2h mark. I decided to leave S3 aside temporarily and instead start doing damage control by going for S4 partials. Again, I can't recall what happened, but I kept running into bugs that I'd never seen before.
-- In summary, I spend the last hour switching between working on S3 full and S4 partials. By the end, I had no idea what I was doing anymore. I had 3 different versions of my S3 solution (none of which worked), each one a complete mess that I eventually no longer understood.
+- In summary, I spent the last hour switching between working on S3 full and S4 partials. By the end, I had no idea what I was doing anymore. I had 3 different versions of my S3 solution (none of which worked), each one a complete mess that I eventually no longer understood.
 - With a few minutes left, it occurred to me that I should at least get some partials for S3. My time ran out as I was coding up the second subtask.
 
 I ended with a laughable score of 33/75. I say laughable not because anyone made fun of it, but because I can't mentally accept it after coming off of a rather successful year in 2021. Of course, 33 is not objectively a "bad" score considering the certificate cutoff is 30, but after hundreds of hours of training, it devastates me to end with a score that I could've achieved in 30 minutes with no prior training whatsoever.
@@ -90,16 +90,18 @@ I ended with a laughable score of 33/75. I say laughable not because anyone made
 I vividly recall staring at the wall and being completely paralyzed for around 10 minutes after the contest, overwhelmed with disbelief, shame, and dejection.
 
 
-## My Final Breath
+## A Final Breath
 
 It would be quite tragic if CCC 2022 was the last memorable contest of my journey. Thankfully, just before I retired, I successfully advanced to the Gold division of USACO in the 2022 US Open contest. I haven't talked about USACO at all yet because I was stuck in the Silver division for 2 years; I advanced to Silver during my first contest and remained there for around 6 contests. 
 
 For context, the US Open is usually the hardest contest of the season, so I didn't expect to do well at all. Nevertheless, I took the contest one problem at a time, and before I knew it, I solved all the problems with 3 hours to spare in the 5-hour window. This performance was a much-needed suggestion that perhaps I was not as worthless as CCC 2022 exposed me to be.
 
+![Promoting to Gold](https://cdn.discordapp.com/attachments/776252217270992906/957759406827778058/unknown.png)
+
 
 ## My Future Involvement in Competitive Programming
 
-As the contest organizer for next year's computer science club, I'm clearly not fully detached from competitive programming yet. I don't mind it though - setting problems for contests is something I enjoy, which is why I switched roles from Senior stream teacher to contest organizer in the first place.
+As the contest organizer for next year's computer science club, I'm clearly not fully detached from competitive programming yet. I don't mind it though - setting problems for contests is something I enjoy, which is why I switched roles from senior-stream teacher to contest organizer in the first place.
 
 Aside from organizing contests for my club, I also recently started testing some contests on DMOJ, namely the "Yet Another Contest" series ([YAC1](https://dmoj.ca/contest/yac1), [YAC2](https://dmoj.ca/contest/yac2), [YAC3](https://dmoj.ca/contest/yac3)). I find some of the problems quite interesting, so I'll likely continue to be a tester as long as I have the time (I prefer testing over doing the contest itself because I no longer want to be bothered with the stress that comes with competing seriously).
 
@@ -143,6 +145,6 @@ In the end, I believe my pursuit was very worthwhile.
 
 Despite the relatively short duration of my journey, it was full of irreplaceable experiences and meaningful transformation. Even though I now realize that developing my competitive programming prowess is no longer the most meaningful goal, it (at least) served as an important transition between my purposeless self and the person I am now, while teaching me many invaluable lessons along the way.
 
-I would like to express my sincere appreciation to everyone who inspired, encouraged, or assisted me throughout my competitive programming journey. I'm sure it would have been much more lonely and frustrating without you all.
+I would like to express my sincere appreciation to everyone who inspired, encouraged, or assisted me along the way. I'm sure it would have been much more lonely and frustrating without you all.
 
 To my fellow competitive programmers, I wish you a fruitful journey.
